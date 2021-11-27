@@ -34,7 +34,7 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Main'),
+        title: const Text(''),
         actions: <Widget>[
           IconButton(
             icon: const Icon(
@@ -63,6 +63,25 @@ class HomePage extends StatelessWidget {
                 color: Colors.blue,
               ),
             ),
+            ListTile(
+                leading: IconButton(
+                  icon: const Icon(
+                    Icons.home,
+                  ),
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => const HomePage()),
+                    );
+                  },
+                ),
+                title: const Text('홈 화면'),
+                onTap: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => const HomePage()),
+                  );
+                }),
             ListTile(
                 leading: IconButton(
                   icon: const Icon(
@@ -111,7 +130,7 @@ class HomePage extends StatelessWidget {
                   onPressed: () {
                     Navigator.push(
                       context,
-                      MaterialPageRoute(builder: (context) => const Hotels()),
+                      MaterialPageRoute(builder: (context) => const MessageRevise()),
                     );
                   },
                 ),
@@ -119,7 +138,7 @@ class HomePage extends StatelessWidget {
                 onTap: () {
                   Navigator.push(
                     context,
-                    MaterialPageRoute(builder: (context) => const Hotels()),
+                    MaterialPageRoute(builder: (context) => const MessageRevise()),
                   );
                 }),
             ListTile(

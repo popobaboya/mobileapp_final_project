@@ -13,6 +13,9 @@ dependencies:
   shrine_images: ^2.0.1
   url_launcher: ^6.0.12
   image_picker: ^0.8.4+4
+  file: ^6.1.2
+  path_provider: ^2.0.7
+  cloud_firestore: ^3.1.0
 
 dev_dependencies:
   flutter_test:
